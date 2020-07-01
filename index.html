@@ -5,12 +5,19 @@
 	<h1>The Table Generator</h1>
 
 	<p id="row1"></p>
+
+	<p id="demo"></p>
 	
 		<script>
-		var x = 4;
-		var y = 2;
-		var z = x * y;
-		document.getElementById("row1").innerHTML = x + " x " + y + " = " + x*y;
+		var x = 2;
+
+		var text = "";
+		var i = 0;
+		while (i<11){
+			text += "<br>" + i + " x " + x + " = " + i * x ;
+			i++;
+		}
+		document.getElementById("demo").innerHTML = text;
 		</script>
 
 	</body>
