@@ -4,27 +4,20 @@
 
 	<h1>The Table Generator</h1>
 
-	<button onclick="myNumber()">Put in your number</button>
-
 	<p id="multiply"></p>
 	
 		<script>
+
+		var x = 1;
+
 		var text = "";
 		var i = 0;
 		while (i<101){
-			text += "<br>" + i + " x " + number1 + " = " + i * number1 ;
+			text += "<br>" + i + " x " + x + " = " + i * x ;
 			i++;
 		}
 
 		document.getElementById("multiply").innerHTML = text;
-
-		function myNumber() {
-  		var number = prompt("Please enter the number you want to multiply.","0");
-  		var number1 = parseFloat(number);
-  		if (number1 != null) {
-
-  			}
-		}
 
 		</script>
 
