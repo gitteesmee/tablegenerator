@@ -8,28 +8,28 @@
 
 			<button type="button" onclick="myFunction()">Submit</button>
 
-			<p id="demo"></p>
-
+			<p id="txt2"></p>
 	
 	<p id="multiply"></p>
 	
 		<script>
 
-				function myFunction() {
-				var y;
-				var txt;
+		function myFunction() {
+		var y;
+		var txt;
+		var txt2;
 
-				// Get the value of the input field with id="numb"
-				y = document.getElementById("numb").value;
+		y = document.getElementById("numb").value;
 
-				if (isNaN(y)) {
-				    txt = "Input not valid";
-				} else {
-				    txt = y;
-				}
-					document.getElementById("demo").innerHTML = txt;
-				
+		if (isNaN(y)) {
+			txt = 1;
+			txt2 = "Input is not valid, put in a number please.";
+		} else {
+			txt = y;
+			txt2 = "";
+			}
 
+		document.getElementById("txt2").innerHTML = txt2;
 
 		var x = txt;
 
