@@ -22,17 +22,16 @@
 				// Get the value of the input field with id="numb"
 				y = document.getElementById("numb").value;
 
-				// If x is Not a Number or less than one or greater than 10
 				if (isNaN(y)) {
-				    text = "Input not valid";
+				    txt = "Input not valid";
 				} else {
-				    text = "Input OK";
+				    txt = y;
 				}
-					document.getElementById("demo").innerHTML = text;
-				}
+					document.getElementById("demo").innerHTML = txt;
+				
 
 
-		var x = 1;
+		var x = txt;
 
 		var text = "";
 		var i = 0;
@@ -42,6 +41,8 @@
 		}
 
 		document.getElementById("multiply").innerHTML = text;
+
+		}
 
 		</script>
 
