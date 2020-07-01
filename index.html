@@ -4,9 +4,33 @@
 
 	<h1>The Table Generator</h1>
 
+			<input id="numb">
+
+			<button type="button" onclick="myFunction()">Submit</button>
+
+			<p id="demo"></p>
+
+	
 	<p id="multiply"></p>
 	
 		<script>
+
+				function myFunction() {
+				var y;
+				var txt;
+
+				// Get the value of the input field with id="numb"
+				y = document.getElementById("numb").value;
+
+				// If x is Not a Number or less than one or greater than 10
+				if (isNaN(y)) {
+				    text = "Input not valid";
+				} else {
+				    text = "Input OK";
+				}
+					document.getElementById("demo").innerHTML = text;
+				}
+
 
 		var x = 1;
 
