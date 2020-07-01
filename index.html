@@ -2,45 +2,45 @@
 <html>
 	<body>
 
-	<h1>The Table Generator</h1>
+	<h1>The Table Generator</h1> <!-- titel -->
 
-			<input id="numb">
+	<input id="num"> <!-- input veld -->
 
-			<button type="button" onclick="myFunction()">Submit</button>
+	<button type="button" onclick="myFunction()">Submit</button> <!-- wanneer er op de button wordt geklikt, wordt myFunction gestart -->
 
-			<p id="txt2"></p>
+	<p id="txt"></p> <!-- txt2 wordt weergegeven -->
 	
-	<p id="multiply"></p>
+	<p id="multiply"></p> <!-- multiply wordt weergegeven -->
 	
 		<script>
 
-		function myFunction() {
-		var y;
-		var txt;
-		var txt2;
+		function myFunction() { // myFunction start
+		var y; // variabele y
+		var number; // variabele number
+		var txt; // variabele txt
 
-		y = document.getElementById("numb").value;
+		y = document.getElementById("num").value; // y is wat er in het input veld staat
 
-		if (isNaN(y)) {
-			txt = 1;
-			txt2 = "Input is not valid, put in a number please.";
-		} else {
-			txt = y;
-			txt2 = "";
+		if (isNaN(y)) { //als y is 'not a number dan'
+			number = 1; // is het de tafel van 1
+			txt = "Input is not valid, put in a number please."; // tekst wordt weergegeven
+		} else { // anders
+			number = y; // de tafel is gelijk aan y
+			txt = ""; // er wordt geen tekst weergegeven
 			}
 
-		document.getElementById("txt2").innerHTML = txt2;
+		document.getElementById("txt").innerHTML = txt; // het id txt wordt gekoppeld aan txt
 
-		var x = txt;
+		var x = number; // x is gelijk aan number
 
-		var text = "";
-		var i = 0;
-		while (i<101){
-			text += "<br>" + i + " x " + x + " = " + i * x ;
-			i++;
+		var outcome = ""; // outcome wordt later ingevuld, nu gelijk aan niks
+		var i = 0; // variabele i is 0
+		while (i<101){ // loop van 0 tot 101, oftewel tot en met 100
+			outcome += "<br>" + i + " x " + x + " = " + i * x ; // outcome is enter, '1' x 'x' = 'i*x'
+			i++; // er wordt 1 bij i opgeteld 
 		}
 
-		document.getElementById("multiply").innerHTML = text;
+		document.getElementById("multiply").innerHTML = outcome; // het id mutiply wordt gekoppeld aan multiply
 
 		}
 
