@@ -1,4 +1,4 @@
-		function myFunction() { // myFunction start
+		function calculation() { // functie start
 		var y; // variabele y
 		var number; // variabele number
 		var txt; // variabele txt

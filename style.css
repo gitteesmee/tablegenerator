@@ -1,0 +1,33 @@
+body {
+  background-color: yellow; /* achtergond */
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif; /* arial, anders helvetica en anders sans-serif lettertype */
+  font-weight: bold; /* bold lettertype */
+  	margin-top: 20px; /* marge van 20px */
+	margin-left: 20px;
+}
+
+p {
+
+	font-family: Arial, Helvetica, sans-serif; /* arial, anders helvetica en anders sans-serif lettertype */
+	border: 1px solid; /* border van 1px, solid */
+	padding-top: 5px; /* marge van 5px tussen text en border */
+	padding-left:10px; /* marge van 10px tussen text en border */
+	margin: auto; /* zet border in het midden */
+	width: 50%; /* met een wijdte van 50% van de pagina */
+}
+
+p1 {
+	font-family: Arial, Helvetica, sans-serif; /* arial, anders helvetica en anders sans-serif lettertype */
+	margin-top: 10px; /* marge van 10px */
+	margin-left: 20px;/* marge van 20px */
+}
+
+h4 {
+	font-family: Arial, Helvetica, sans-serif; /* arial, anders helvetica en anders sans-serif lettertype */
+	color: red;
+	margin-top: 10px; /* marge van 10px */
+	margin-left: 20px; /* marge van 20px */
+}
